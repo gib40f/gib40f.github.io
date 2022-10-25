@@ -17170,6 +17170,7 @@ Ss:function Ss(){},
 ry:function ry(a){this.a=a},
 HD:function HD(a){var _=this
 _.e=_.d="Unknown"
+_.f=0
 _.a=null
 _.b=a
 _.c=null},
@@ -55669,7 +55670,7 @@ A.V3().b0(new A.a2S(this),t.P)},
 n(){this.aP()}}
 A.a2R.prototype={
 $3(a,b,c){var s=null,r=this.a,q=t.F
-return new A.l8(new A.a2I(r),new A.a2J(r),new A.a2K(r),new A.a2L(r),new A.a2M(r),new A.a2N(r),A.NP(A.ab5(A.a([A.iO(r.d,s),A.iO(r.e,s),new A.fF(B.aX,new A.rp(s,s,"RotationScreenPush",new A.a2O(a),B.jB,!0,B.jR,B.J1,B.Kb),s),B.u7,A.iO("Test",s),A.iO("The number 0",s),B.J_,A.iO(""+b.c,A.aV(a).RG.e),A.iO(A.aq4(b.a),A.aV(a).RG.f),A.iO(b.b[B.f.dz(b.c,2)],A.aV(a).RG.e),A.iO("Version: "+b.d,A.aV(a).RG.e),B.u7,A.acB(A.a([new A.fF(B.z0,A.a85(B.zs,"DecrementButton",B.K9,!1,new A.a2P(b),"Decrement"),s),new A.fF(B.z_,A.a85(B.zr,"IncrementButton",B.Ka,!1,new A.a2Q(b),"Increment"),s)],q),B.eq,B.CQ,B.f8)],q),B.CP),s,s),s)},
+return new A.l8(new A.a2I(r),new A.a2J(r),new A.a2K(r),new A.a2L(r),new A.a2M(r),new A.a2N(r),A.NP(A.ab5(A.a([A.iO(r.d,s),A.iO(r.e,s),new A.fF(B.aX,new A.rp(s,s,"RotationScreenPush",new A.a2O(a),B.jB,!0,B.jR,B.J1,B.Kb),s),B.u7,A.iO("Test",s),A.iO("The number "+r.f,s),B.J_,A.iO(""+b.c,A.aV(a).RG.e),A.iO(A.aq4(b.a),A.aV(a).RG.f),A.iO(b.b[B.f.dz(b.c,2)],A.aV(a).RG.e),A.iO("Version: "+b.d,A.aV(a).RG.e),B.u7,A.acB(A.a([new A.fF(B.z0,A.a85(B.zs,"DecrementButton",B.K9,!1,new A.a2P(b),"Decrement"),s),new A.fF(B.z_,A.a85(B.zr,"IncrementButton",B.Ka,!1,new A.a2Q(b),"Increment"),s)],q),B.eq,B.CQ,B.f8)],q),B.CP),s,s),s)},
 $C:"$3",
 $R:3,
 $S:323}
@@ -55679,7 +55680,8 @@ var s=this.a
 s.ah(new A.a2H(s))},
 $S:0}
 A.a2H.prototype={
-$0(){this.a.d="onFocusGained"},
+$0(){var s=this.a
+s.d="onFocusGained";++s.f},
 $S:0}
 A.a2J.prototype={
 $0(){A.cY(":::: onFocusLost")
@@ -55687,7 +55689,9 @@ var s=this.a
 s.ah(new A.a2G(s))},
 $S:0}
 A.a2G.prototype={
-$0(){this.a.d="onFocusLost"},
+$0(){var s=this.a
+s.d="onFocusLost"
+s.f-=5},
 $S:0}
 A.a2M.prototype={
 $0(){A.cY(":::: onForegroundGained")
@@ -55695,7 +55699,8 @@ var s=this.a
 s.ah(new A.a2D(s))},
 $S:0}
 A.a2D.prototype={
-$0(){this.a.d="onForegroundGained"},
+$0(){var s=this.a
+s.d="onForegroundGained";++s.f},
 $S:0}
 A.a2N.prototype={
 $0(){A.cY(":::: onForegroundLost")
@@ -55703,7 +55708,9 @@ var s=this.a
 s.ah(new A.a2C(s))},
 $S:0}
 A.a2C.prototype={
-$0(){this.a.d="onForegroundLost"},
+$0(){var s=this.a
+s.d="onForegroundLost"
+s.f-=5},
 $S:0}
 A.a2K.prototype={
 $0(){A.cY(":::: onVisibilityGained")
@@ -55711,7 +55718,8 @@ var s=this.a
 s.ah(new A.a2F(s))},
 $S:0}
 A.a2F.prototype={
-$0(){this.a.d="onVisibilityGained"},
+$0(){var s=this.a
+s.d="onVisibilityGained";++s.f},
 $S:0}
 A.a2L.prototype={
 $0(){A.cY(":::: onVisibilityLost")
@@ -55719,7 +55727,9 @@ var s=this.a
 s.ah(new A.a2E(s))},
 $S:0}
 A.a2E.prototype={
-$0(){this.a.d="onVisibilityLost"},
+$0(){var s=this.a
+s.d="onVisibilityLost"
+s.f-=5},
 $S:0}
 A.a2O.prototype={
 $0(){return A.cG([A.UG(this.a).GW("/rotation",null,t.X)],t.iG)},
