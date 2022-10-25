@@ -55722,21 +55722,21 @@ $0(){var s=this.a
 s.aa(new A.a2V(s))},
 $S:2}
 A.a2V.prototype={
-$0(){--this.a.r},
+$0(){this.a.r-=5},
 $S:0}
 A.a33.prototype={
 $0(){var s=this.a
 s.aa(new A.a2U(s))},
 $S:2}
 A.a2U.prototype={
-$0(){--this.a.r},
+$0(){this.a.r-=5},
 $S:0}
 A.a34.prototype={
 $0(){var s=this.a
 s.aa(new A.a2T(s))},
 $S:2}
 A.a2T.prototype={
-$0(){--this.a.r},
+$0(){this.a.r-=5},
 $S:0}
 A.Lp.prototype={}
 A.Lq.prototype={}
